@@ -1,0 +1,11 @@
+---
+version: '3'
+services:
+  bootiful-error-handling:
+    image: postgres:13.3
+    container_name: bootiful-error-handling
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bootiful-error-handling
+    ports:
+      - "5432:5432"
